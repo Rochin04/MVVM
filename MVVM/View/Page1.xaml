@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.View.Page1">
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout VerticalOptions="Center">
+                <StackLayout>
+                    <Label Text="1#" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Entry PlaceholderColor="LightGray" Placeholder="Escribe un numero" HorizontalOptions="StartAndExpand" Text="{Binding N1}" Keyboard="Numeric"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="2#" TextColor="Black" FontAttributes="Bold" VerticalOptions="Center"/>
+                    <Entry PlaceholderColor="White" Placeholder="Escriba un numero" HorizontalOptions="StartAndExpand" Text="{Binding N2}" Keyboard="Numeric"/>
+                </StackLayout>
+                <Button Text="sumar" VerticalOptions="Center" HorizontalOptions="Center" Command="{Binding Sumascommand}" TextTransform="None" Background="black" FontAttributes="Bold" CornerRadius="10"/>
+                <Label Text="{Binding R}" TextColor="Black" HorizontalOptions="Center" FontAttributes="Bold" FontSize="35"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
