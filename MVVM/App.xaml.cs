@@ -11,7 +11,7 @@ namespace MVVM
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new NavigationPage(new Menuprincipal());
         }
 
         protected override void OnStart()
