@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 
-namespace MVVM.ViewModel
+namespace MVVM.ViewModel.VMPokemon
 {
-    class VMpatron : BaseViewModel
+    public class VMListaPokemon : BaseViewModel
     {
         string _Texto;
         #region CONSTRUCTOR
-        public VMpatron(INavigation navigation)
+        public VMListaPokemon(INavigation navigation)
         {
             Navigation = navigation;
         }
@@ -35,6 +35,5 @@ namespace MVVM.ViewModel
         public ICommand ProcesoAsyncronocommand => new Command(async () => await ProcesoAsyncrono());
         public ICommand ProcesoSimCommand => new Command(ProcesoSimple);
         #endregion
-        
     }
 }

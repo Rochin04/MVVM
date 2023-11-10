@@ -1,4 +1,5 @@
 ﻿using MVVM.View;
+using MVVM.View.Pokemon;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -11,7 +12,7 @@ namespace MVVM
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Menuprincipal());
+            MainPage = new NavigationPage(new RegistrarPokemon());
         }
 
         protected override void OnStart()
